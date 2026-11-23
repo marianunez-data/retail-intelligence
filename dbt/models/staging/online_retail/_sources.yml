@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    description: UCI Online Retail II, both yearly sheets, written by `python -m retail_intelligence.ingest`.
+    tables:
+      - name: transactions
+        description: One row per invoice line, as delivered. No cleaning applied.
+        meta:
+          external_location: "read_parquet('../data/raw/online_retail_ii.parquet')"

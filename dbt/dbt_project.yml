@@ -1,0 +1,33 @@
+name: retail
+version: "1.0.0"
+profile: retail
+config-version: 2
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+
+vars:
+  cutoff_date: "2011-09-01"     # features use data strictly before this date
+  horizon_days: 90              # label: purchased within this many days after the cutoff
+  min_active_weeks: 70          # demand forecasting universe: products sold in at least this many weeks
+  output_name: "features_2011_09_01"
+  # Non-merchandise stock codes found in the data audit (postage, fees, adjustments, tests)
+  non_product_codes: ["POST", "DOT", "M", "C2", "D", "S", "B", "BANK CHARGES", "ADJUST",
+                      "AMAZONFEE", "PADS", "CRUK", "TEST001", "TEST002"]
+
+models:
+  retail:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table
+      retention:
+        +tags: [retention]
+      demand:
+        +tags: [demand]
+      pricing:
+        +tags: [pricing]
