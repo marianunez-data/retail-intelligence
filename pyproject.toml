@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retail-intelligence"
+version = "1.0.0"
+description = "Retail analytics on real data: customer retention, demand forecasting, pricing and promotions, with a dashboard and an AI analyst"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2",
+    "pyarrow",
+    "numpy",
+    "scikit-learn>=1.5",
+    "xgboost>=2.0",
+    "joblib",
+    "duckdb>=1.1",
+    "openai>=1.40",
+]
+
+[project.optional-dependencies]
+app = ["streamlit>=1.40", "altair>=5"]
+pipeline = ["dbt-duckdb>=1.8", "openpyxl", "pyfixest>=0.30"]
+analysis = ["jupyter", "matplotlib", "seaborn", "shap", "nbconvert", "ipykernel"]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]

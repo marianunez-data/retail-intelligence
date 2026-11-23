@@ -1,0 +1,21 @@
+# Raw data is downloaded, not committed (45 MB). See data/README.md
+data/raw/*
+!data/raw/.gitkeep
+# Row-level panel derived from licensed dunnhumby data (aggregated outputs are committed)
+data/processed/pricing_store_weeks.parquet
+# Warehouse and build artifacts
+*.duckdb
+*.duckdb.wal
+dbt/target/
+dbt/logs/
+dbt/.user.yml
+# Trained model: rebuilt by `make train` and inside the Docker image
+models/*.joblib
+# Secrets
+.env
+# Python and Jupyter
+__pycache__/
+*.egg-info/
+.venv/
+.ipynb_checkpoints/
+.pytest_cache/
