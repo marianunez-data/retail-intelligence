@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: customer_features
+    description: >
+      One row per customer active before the cutoff date, with the repurchase label
+      and model features. Built once per snapshot (see vars cutoff_date and output_name).
+    columns:
+      - name: CustomerID
+        data_tests: [unique, not_null]
+      - name: label
+        description: 1 if the customer ordered within horizon_days after the cutoff
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [0, 1]
+      - name: recency_days
+        data_tests: [not_null]
+      - name: frequency
+        data_tests: [not_null]
+      - name: monetary
+        data_tests: [not_null]
+      - name: orders_last_90d
+        data_tests: [not_null]
+      - name: is_uk
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [0, 1]
