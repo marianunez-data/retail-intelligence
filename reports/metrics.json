@@ -1,0 +1,57 @@
+{
+  "model": "XGBoost, depth 3, 300 trees, monotone constraints",
+  "training_snapshot": {
+    "name": "features_2011_09_01",
+    "cutoff": "2011-09-01",
+    "customers": 5224,
+    "repurchase_rate": 0.428
+  },
+  "scoring_snapshot": {
+    "name": "features_current",
+    "cutoff": "2011-12-10",
+    "customers": 5852
+  },
+  "holdout": {
+    "auc": 0.7863,
+    "average_precision": 0.749,
+    "brier": 0.1848,
+    "log_loss": 0.551,
+    "capture_top20": 0.3758,
+    "lift_top20": 1.8792,
+    "base_rate": 0.4278,
+    "mean_prediction": 0.4309
+  },
+  "holdout_logistic": {
+    "auc": 0.7803,
+    "average_precision": 0.737,
+    "brier": 0.1866,
+    "log_loss": 0.5526,
+    "capture_top20": 0.3669,
+    "lift_top20": 1.8345,
+    "base_rate": 0.4278,
+    "mean_prediction": 0.4301
+  },
+  "holdout_recency_rule": {
+    "auc": 0.7483
+  },
+  "out_of_time": {
+    "auc": 0.7941,
+    "average_precision": 0.7653,
+    "brier": 0.1958,
+    "log_loss": 0.5881,
+    "capture_top20": 0.386,
+    "lift_top20": 1.9298,
+    "base_rate": 0.428,
+    "mean_prediction": 0.3087
+  },
+  "thresholds": {
+    "loyal": 0.6,
+    "nurture": 0.3,
+    "high_value_spend": 2887.41
+  },
+  "segments": {
+    "Loyal": 1862,
+    "Nurture": 1703,
+    "At risk": 2287
+  }
+}
