@@ -1,0 +1,111 @@
+priority,keyword,category
+1,ADVENT,Christmas and seasonal
+1,BAUBLE,Christmas and seasonal
+1,CHRISTMAS,Christmas and seasonal
+1,EASTER,Christmas and seasonal
+1,REINDEER,Christmas and seasonal
+1,SANTA,Christmas and seasonal
+1,SNOWFLAKE,Christmas and seasonal
+1,XMAS,Christmas and seasonal
+2,BAG,Bags
+2,SHOPPER,Bags
+3,CANDLE,Lighting and candles
+3,LANTERN,Lighting and candles
+3,LIGHT,Lighting and candles
+3,T-LIGHT,Lighting and candles
+4,BAKING,Kitchen and dining
+4,BOTTLE,Kitchen and dining
+4,BOWL,Kitchen and dining
+4,BREAD BIN,Kitchen and dining
+4,CAKE,Kitchen and dining
+4,CAKESTAND,Kitchen and dining
+4,COFFEE,Kitchen and dining
+4,CUP,Kitchen and dining
+4,CUPCAKE,Kitchen and dining
+4,CUTLERY,Kitchen and dining
+4,DOILY,Kitchen and dining
+4,GLASS,Kitchen and dining
+4,JAM,Kitchen and dining
+4,JAR,Kitchen and dining
+4,JUG,Kitchen and dining
+4,KITCHEN,Kitchen and dining
+4,LUNCH BOX,Kitchen and dining
+4,MUG,Kitchen and dining
+4,NAPKIN,Kitchen and dining
+4,PANTRY,Kitchen and dining
+4,PLATE,Kitchen and dining
+4,POPCORN,Kitchen and dining
+4,SAUCER,Kitchen and dining
+4,TEA,Kitchen and dining
+4,TEACUP,Kitchen and dining
+4,TEAPOT,Kitchen and dining
+4,TRAY,Kitchen and dining
+5,BALLOON,Party and gifts
+5,BIRTHDAY,Party and gifts
+5,BUNTING,Party and gifts
+5,CARD,Party and gifts
+5,GIFT,Party and gifts
+5,PARTY,Party and gifts
+5,WRAP,Party and gifts
+6,CHALK,Stationery and craft
+6,CRAFT,Stationery and craft
+6,FELTCRAFT,Stationery and craft
+6,NOTEBOOK,Stationery and craft
+6,PAPER,Stationery and craft
+6,PEN,Stationery and craft
+6,PENCIL,Stationery and craft
+6,RIBBON,Stationery and craft
+6,SEWING,Stationery and craft
+6,STICKER,Stationery and craft
+6,TAPE,Stationery and craft
+7,CHILDRENS,Toys and kids
+7,CLAY,Toys and kids
+7,COLOURING,Toys and kids
+7,DOLLY,Toys and kids
+7,DOMINOES,Toys and kids
+7,GAME,Toys and kids
+7,GLIDERS,Toys and kids
+7,PAINT SET,Toys and kids
+7,PLAYHOUSE,Toys and kids
+7,SKIPPING,Toys and kids
+7,SPACEBOY,Toys and kids
+7,TOY,Toys and kids
+8,BIRD,Garden and outdoor
+8,BIRDCAGE,Garden and outdoor
+8,GARDEN,Garden and outdoor
+8,HAND WARMER,Garden and outdoor
+8,PARASOL,Garden and outdoor
+8,PICNIC,Garden and outdoor
+8,UMBRELLA,Garden and outdoor
+8,WATERING,Garden and outdoor
+9,BOARD,Home decor
+9,BUILDING BLOCK,Home decor
+9,CHALKBOARD,Home decor
+9,CLOCK,Home decor
+9,CUSHION,Home decor
+9,DECORATION,Home decor
+9,DOORMAT,Home decor
+9,DRAWER,Home decor
+9,DUCKS,Home decor
+9,FAN,Home decor
+9,FRAME,Home decor
+9,GARLAND,Home decor
+9,HANGING,Home decor
+9,HEART,Home decor
+9,HOOK,Home decor
+9,KNOB,Home decor
+9,MAT,Home decor
+9,MEMOBOARD,Home decor
+9,MIRROR,Home decor
+9,ORNAMENT,Home decor
+9,PEGS,Home decor
+9,RACK,Home decor
+9,SIGN,Home decor
+9,THROW,Home decor
+10,BASKET,Storage
+10,BOX,Storage
+10,CABINET,Storage
+10,CASE,Storage
+10,CHEST,Storage
+10,STORAGE,Storage
+10,TIN,Storage
