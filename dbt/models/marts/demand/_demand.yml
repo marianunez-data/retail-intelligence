@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: dim_products
+    description: One row per Online Retail product with its main description and merchandise category.
+    columns:
+      - name: product_id
+        data_tests: [unique, not_null]
+      - name: category
+        data_tests: [not_null]
+
+  - name: product_weekly_demand
+    description: >
+      Weekly units, revenue, orders and prices per product for the forecasting
+      universe, on a complete product by week grid (zeros where nothing sold).
+    columns:
+      - name: product_id
+        data_tests: [not_null]
+      - name: week_start
+        data_tests: [not_null]
+      - name: units
+        data_tests: [not_null]
