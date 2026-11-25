@@ -23,7 +23,7 @@ Python, DuckDB, dbt, scikit-learn, XGBoost, SHAP, pyfixest, Streamlit, an OpenAI
 
 - [x] Data pipeline: ingestion and dbt models with data tests (#1)
 - [x] Customer retention model: notebook, validation, SHAP (#2)
-- [ ] Demand forecasting: notebook, backtests, prediction intervals (#3)
+- [x] Demand forecasting: notebook, backtests, prediction intervals (#3)
 - [ ] Pricing and promotions: notebook, elasticities, simulator (#4)
 - [ ] Streamlit app, AI analyst and deployment (#5)
 
