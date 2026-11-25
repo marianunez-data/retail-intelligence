@@ -1,0 +1,13 @@
+version: 2
+
+seeds:
+  - name: product_category_rules
+    description: >
+      Keyword rules that assign Online Retail products to merchandise categories.
+      The dataset has no category column; rules are matched as whole words against
+      the product description, lowest priority number first.
+    columns:
+      - name: keyword
+        data_tests: [unique, not_null]
+      - name: category
+        data_tests: [not_null]

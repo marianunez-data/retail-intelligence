@@ -1,0 +1,45 @@
+{
+  "horizon_weeks": 4,
+  "products": 1041,
+  "weeks_of_history": 104,
+  "backtest_origins": 12,
+  "backtest_period": [
+    "2011-06-06",
+    "2011-11-07"
+  ],
+  "methods": {
+    "Last week x4": {
+      "wape_product": 0.7183,
+      "bias": -0.0349,
+      "wape_total": 0.1634
+    },
+    "Average of last 4 weeks": {
+      "wape_product": 0.5269,
+      "bias": -0.0606,
+      "wape_total": 0.1147
+    },
+    "Average of last 13 weeks": {
+      "wape_product": 0.4897,
+      "bias": -0.094,
+      "wape_total": 0.1283
+    },
+    "Seasonal naive": {
+      "wape_product": 0.744,
+      "bias": 0.228,
+      "wape_total": 0.228
+    },
+    "Global gradient boosting": {
+      "wape_product": 0.4749,
+      "bias": 0.0362,
+      "wape_total": 0.0813
+    }
+  },
+  "best_baseline": "Average of last 13 weeks",
+  "interval_coverage_raw": 0.766,
+  "interval_coverage_calibrated": 0.8056,
+  "conformal_margin": 0.1615,
+  "forecast_window": [
+    "2011-12-05",
+    "2012-01-01"
+  ]
+}
