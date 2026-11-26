@@ -1,0 +1,141 @@
+{
+  "data": {
+    "rows": 524674,
+    "stores": 77,
+    "products": 55,
+    "weeks": 156,
+    "period": [
+      "2009-01-14",
+      "2012-01-04"
+    ]
+  },
+  "category_elasticities": {
+    "Bag snacks": {
+      "elasticity_base": -1.2399,
+      "elasticity_promo": -0.6727,
+      "between_product_sd_base": 0.8023
+    },
+    "Cold cereal": {
+      "elasticity_base": -1.3524,
+      "elasticity_promo": -1.7357,
+      "between_product_sd_base": 0.8162
+    },
+    "Frozen pizza": {
+      "elasticity_base": -2.9062,
+      "elasticity_promo": -3.2537,
+      "between_product_sd_base": 0.2322
+    },
+    "Oral hygiene products": {
+      "elasticity_base": -1.0524,
+      "elasticity_promo": -1.2162,
+      "between_product_sd_base": 0.718
+    }
+  },
+  "promo_effects": {
+    "Bag snacks": {
+      "is_feature": {
+        "estimate": 0.3404,
+        "se": 0.038,
+        "lift": 0.4055
+      },
+      "is_display": {
+        "estimate": 0.346,
+        "se": 0.0083,
+        "lift": 0.4134
+      },
+      "is_tpr_only": {
+        "estimate": -0.0021,
+        "se": 0.0152,
+        "lift": -0.0021
+      }
+    },
+    "Cold cereal": {
+      "is_feature": {
+        "estimate": 0.4058,
+        "se": 0.0379,
+        "lift": 0.5005
+      },
+      "is_display": {
+        "estimate": 0.4616,
+        "se": 0.0371,
+        "lift": 0.5867
+      },
+      "is_tpr_only": {
+        "estimate": -0.0699,
+        "se": 0.0279,
+        "lift": -0.0675
+      }
+    },
+    "Frozen pizza": {
+      "is_feature": {
+        "estimate": 0.1937,
+        "se": 0.04,
+        "lift": 0.2137
+      },
+      "is_display": {
+        "estimate": 0.3402,
+        "se": 0.0213,
+        "lift": 0.4053
+      },
+      "is_tpr_only": {
+        "estimate": -0.125,
+        "se": 0.0394,
+        "lift": -0.1175
+      }
+    },
+    "Oral hygiene products": {
+      "is_feature": {
+        "estimate": 0.3509,
+        "se": 0.037,
+        "lift": 0.4203
+      },
+      "is_display": {
+        "estimate": 0.181,
+        "se": 0.0155,
+        "lift": 0.1984
+      },
+      "is_tpr_only": {
+        "estimate": -0.0876,
+        "se": 0.0202,
+        "lift": -0.0839
+      }
+    }
+  },
+  "validation": {
+    "holdout_start": "2011-07-13",
+    "rows": 82947,
+    "rows_without_history": 3531,
+    "all_weeks": {
+      "Store-product average, last 13 weeks": {
+        "wape": 0.46567527477106874,
+        "bias": 0.046213975690094465
+      },
+      "Seasonality only": {
+        "wape": 0.4818374242021837,
+        "bias": 0.10263219483943038
+      },
+      "Seasonality + price and promotions": {
+        "wape": 0.34904760316727523,
+        "bias": -0.007751103702416821
+      }
+    },
+    "promoted_weeks": {
+      "Store-product average, last 13 weeks": {
+        "wape": 0.495265673755178,
+        "bias": -0.307627279285114
+      },
+      "Seasonality only": {
+        "wape": 0.5030848614941986,
+        "bias": -0.2896157991892799
+      },
+      "Seasonality + price and promotions": {
+        "wape": 0.3857721375599673,
+        "bias": 0.0363508246572616
+      }
+    }
+  },
+  "settings": {
+    "default_gross_margin": 0.3,
+    "price_range": 0.1
+  }
+}

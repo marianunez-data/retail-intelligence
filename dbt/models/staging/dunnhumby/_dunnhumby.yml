@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: stg_frat_sales
+    description: Cleaned weekly store-product sales with shelf price, base price, discount depth and promotion flags.
+    columns:
+      - name: week_end
+        data_tests: [not_null]
+      - name: upc
+        data_tests: [not_null]
+      - name: price
+        data_tests: [positive]
+      - name: base_price
+        data_tests: [positive]
+      - name: units
+        data_tests: [positive]
+  - name: stg_frat_products
+    columns:
+      - name: upc
+        data_tests: [unique, not_null]
+  - name: stg_frat_stores
+    columns:
+      - name: store_id
+        data_tests: [unique, not_null]
+      - name: price_tier
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [Upscale, Mainstream, Value]

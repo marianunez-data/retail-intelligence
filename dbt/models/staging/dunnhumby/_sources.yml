@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: dunnhumby
+    description: >
+      dunnhumby "Breakfast at the Frat": weekly sales, prices and promotions for 58
+      products in 4 categories across 79 stores, January 2009 to January 2012.
+      Written by `python -m retail_intelligence.ingest_pricing`. (c) dunnhumby, not redistributed.
+    tables:
+      - name: transactions
+        description: One row per store, product and week (week ending on Wednesday).
+        meta:
+          external_location: "read_parquet('../data/raw/dunnhumby/transactions.parquet')"
+      - name: products
+        meta:
+          external_location: "read_parquet('../data/raw/dunnhumby/products.parquet')"
+      - name: stores
+        meta:
+          external_location: "read_parquet('../data/raw/dunnhumby/stores.parquet')"

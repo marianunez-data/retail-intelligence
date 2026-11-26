@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: pricing_store_weeks
+    description: Weekly store-product pricing panel used for elasticity and promotion models.
+    columns:
+      - name: category
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [Bag snacks, Cold cereal, Frozen pizza, Oral hygiene products]
+      - name: discount_depth
+        data_tests: [not_null]
