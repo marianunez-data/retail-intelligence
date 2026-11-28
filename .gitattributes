@@ -2,3 +2,5 @@
 # keep them out of GitHub's language statistics.
 *.ipynb linguist-detectable=false
 reference/** linguist-detectable=false
+# dbt models are the analytics engineering layer: count them as SQL.
+dbt/**/*.sql linguist-detectable=true linguist-language=SQL
