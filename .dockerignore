@@ -1,0 +1,10 @@
+*
+!pyproject.toml
+!src/
+!app/
+!.streamlit/
+!data/processed/*.csv
+!data/processed/product_weekly_demand.parquet
+!data/processed/pricing_model.json
+!reports/demand_metrics.json
+**/__pycache__
