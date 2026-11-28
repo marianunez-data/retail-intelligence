@@ -1,0 +1,3 @@
+# Used by Streamlit Community Cloud: installs this package with the app dependencies.
+# Local development: pip install -e ".[app,pipeline,analysis,dev]" -c requirements-lock.txt
+.[app]
