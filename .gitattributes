@@ -1,4 +1,4 @@
 # Notebook outputs (charts and tables) are documentation, not source code:
 # keep them out of GitHub's language statistics.
-*.ipynb linguist-documentation
-reference/** linguist-documentation
+*.ipynb linguist-detectable=false
+reference/** linguist-detectable=false
