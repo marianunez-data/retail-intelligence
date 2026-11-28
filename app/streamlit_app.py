@@ -6,7 +6,12 @@ Retail Intelligence: customer retention, demand forecasting, and pricing and pro
 from __future__ import annotations
 
 import html
+import os
 from pathlib import Path
+
+# Point the package at this repository's data, even when it is installed as a regular
+# (non-editable) package, as on Streamlit Community Cloud. Must run before the imports below.
+os.environ.setdefault("RETAIL_HOME", str(Path(__file__).resolve().parents[1]))
 
 import altair as alt
 import pandas as pd
