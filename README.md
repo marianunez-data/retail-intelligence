@@ -9,7 +9,7 @@
 Each question has its own storytelling notebook, tested dbt models, validated models, a page in a production dashboard, and tools for an AI analyst that answers business questions with the same engines.
 
 [![CI](https://github.com/marianunez-data/retail-intelligence/actions/workflows/ci.yml/badge.svg)](https://github.com/marianunez-data/retail-intelligence/actions/workflows/ci.yml)
-&nbsp;Run the app locally or with Docker in a few minutes: see [Quickstart](#quickstart).
+&nbsp;**[Open the live app](https://retail-intelligence-mcgn.streamlit.app)** (free hosting: if it has been idle, click the wake-up button and wait about a minute)
 
 ![Retail Intelligence app walkthrough: overview, pricing simulator, customer what-if and demand forecast](docs/images/demo.gif)
 
@@ -26,16 +26,6 @@ Each question has its own storytelling notebook, tested dbt models, validated mo
 | **Pricing and promotions** ([notebook 03](notebooks/03_pricing_and_promotions.ipynb)) | dunnhumby *Breakfast at the Frat*: 524,674 store-product-weeks, 77 stores | Elasticities from **-1.05** (oral hygiene) to **-2.91** (frozen pizza); circular and display add **20 to 60%** lift; discounts under 10% do nothing; out-of-time WAPE **34.9%** vs 46.6% for a store-product average |
 
 All numbers are written by the pipelines into [`reports/`](reports) and [`data/processed/`](data/processed), and match the notebooks.
-
-## What this project shows
-
-| Role | Evidence |
-|---|---|
-| **Data Scientist** | Problem framing and target design; data audits turned into rules; three-layer validation (cross-validation, holdout, out-of-time); rolling-origin forecast backtests against planner baselines; calibration and conformal prediction intervals; SHAP; a difference-in-differences natural experiment; fixed-effects elasticity models with clustered errors and partial pooling; promotion economics; honest limitations in every notebook |
-| **Analytics Engineer** | dbt on DuckDB with two sources, staging, intermediate and mart layers by domain, a seed for category rules, parameterised point-in-time snapshots, 40+ data tests (label leakage, demand grid completeness, panel uniqueness, value ranges), documented cleaning rules traced back to each audit |
-| **AI Engineer** | Tool-calling agent on any OpenAI-compatible API (Gemini free tier by default) with nine tools across three domains, guarded text-to-SQL on a sandboxed DuckDB, transparent analysis steps, agent loop tested with a scripted fake LLM |
-| **Pricing, revenue and demand roles** | Own-price and promotional elasticities by product, discount-depth thresholds, pantry-loading and cannibalization tests, profit simulator with margin assumptions, Lerner-rule price recommendations, demand classification (Syntetos-Boylan), safety-stock ranges |
-| **ML / production** | Installable package shared by notebooks, app and tests; Docker image that trains at build time; CI with 55 unit, agent and end-to-end pipeline tests plus a container health check; ready for free cloud hosting |
 
 ## Architecture
 
@@ -207,6 +197,4 @@ Built in milestones, each tracked as an issue and delivered through a pull reque
 
 ## Data and license
 
-- Chen, D. (2012). *Online Retail II* [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5CG6D. CC BY 4.0.
-- dunnhumby. *Breakfast at the Frat* [Source File]. https://www.dunnhumby.com/source-files/. Free for learning and case studies, all rights reserved: downloaded by the pipeline and never redistributed in this repository; only aggregated results are committed.
-- Code: MIT License.
+Data: [UCI Online Retail II](https://doi.org/10.24432/C5CG6D) (Chen, 2012, CC BY 4.0) and [dunnhumby *Breakfast at the Frat*](https://www.dunnhumby.com/source-files/) (downloaded by the pipeline, never redistributed; only aggregated results are committed). Code: MIT License.
